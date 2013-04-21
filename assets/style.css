@@ -1,0 +1,187 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	color: #333;
+	padding: 20px;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+embed, iframe {
+	border: 0;
+}
+button, input, textarea {
+	border-radius: 6px;
+	line-height: 14px;
+	border-width: 0px;
+	padding: 10px;
+	font-size: 14px;
+	margin: 0;
+}
+button, input[type='submit'] {
+	cursor: pointer;
+	background-color: #C0392B;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#app {
+	position: relative;
+	width: 1200px;
+	left: 50%;
+	margin-left: -600px;
+}
+#all-videos {
+	width: 350px;
+	position: absolute;
+}
+#video-list {
+	height: 550px;
+	overflow-y: scroll;
+	background-color: #EFEFEF;
+}
+#video-list li {
+	border-top: 1px solid #DDD;
+	position: relative;
+}
+#video-list li:hover {
+	cursor: pointer;
+	background-color: #E74C3C;
+	color: #FFF;
+}
+#video-list li:first-child {
+	border-top-width: 0;
+}
+.video-title {
+	padding: 14px 0 14px 25px;
+	width: 290px;
+}
+.btn-remove-video {
+	position: absolute;
+	top: 12px;
+	right: 18px;
+	visibility: hidden;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+}
+.btn-remove-video:before {
+	content: "\2716";
+}
+#video-list li:hover .btn-remove-video {
+	visibility: visible;
+}
+#form-add-video-list {
+	position: absolute;
+	top: 600px;
+	width: 350px;
+	background-color: #E5E5E5;
+	padding: 20px;
+	box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.3);
+}
+#new-video-list {
+	width: 210px;
+	margin-right: 10px;
+}
+.btn-remove-video:hover {
+	text-shadow: 0 0 1px #000,
+				 0 0 10px rgba(199, 107, 107, 0.8);
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	transform: scale(1.3);
+}
+#player {
+	position: absolute;
+	left: 350px;
+	width: 840px;
+	height: 700px;
+	background-color: #34495E;
+	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.8);
+	margin-left: -2px;
+	z-index: 99;
+	color: #FFF;
+}
+#current-video-title {
+	padding: 20px;
+	font-size: 20px;
+}
+#ytplayer .big-title {
+	font-size: 75px;
+	padding-left: 60px;
+	padding-top: 50px;
+}
+#ytplayer p {
+	font-size: 14px;
+	padding-left: 60px;
+}
+#note-list {
+	height: 60px;
+	overflow-y: scroll;
+	margin: 20px 40px;
+}
+#note-list li {
+	height: 70px;
+}
+#note-list li .time, #note li .time.edit {
+	width: 50px;
+	text-align: center;
+	margin-right: 20px;
+	float: left;
+	padding: 5px;
+	border-width: 0;
+	line-height: 15px;
+}
+#note-list li .content, #note li .content.edit {
+	padding: 5px;
+	width: 600px;
+	height: 70px;
+	float: left;
+	border-width: 0;
+	line-height: 15px;
+	margin-right: 15px;
+}
+#note-list li .conetnet {
+	width: 610px;
+}
+#note-list li input.time.edit, #note-list li textarea.content.edit {
+	font-size: 12px;
+	background-color: #2C3E50;
+	color: #FFF;
+}
+#note-list li .save, #note-list li .remove {
+	padding: 6px 10px;
+	border-radius: 3px;
+	width: 40px;
+	text-align: center;
+	margin-bottom: 8px;
+	color: #1abc9c;
+	background-color: #2C3E50;
+}
+#note-list li .save:hover, #note-list li .remove:hover {
+	color: #FFF;
+}
+
+.list-header {
+	height: 50px;
+	padding-left: 25px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #2C3E50;
+	color: #FFF;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+.edit {
+	display: none;
+}
+.editing .edit {
+	display: block;
+}
+.editing .view {
+	display: none;
+}
