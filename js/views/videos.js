@@ -28,6 +28,7 @@ app.VideoView = Backbone.View.extend({
 				app.topApp.$noteListContainer.append(noteView.render().el);
 			}
 		});
+		$('#form-new-notes').show();
 	},
 
 	removeVideo: function(e) {
