@@ -10,3 +10,8 @@ The notes are based on the timeline of the video and thus assoicated with the ti
 
 Notes is developed by Backbone.js, using the API from Khan Academy and YouTube.
 
+##Demo
+
+The interface: https://raw.github.com/lichgo/notes/master/Notes.png
+
+
